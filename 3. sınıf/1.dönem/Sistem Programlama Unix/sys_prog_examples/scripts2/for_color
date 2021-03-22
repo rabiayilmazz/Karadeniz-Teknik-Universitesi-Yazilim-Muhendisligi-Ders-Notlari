@@ -1,0 +1,5 @@
+for colors in Red Blue Green Yellow Orange Black Gray White
+  do
+    echo $colors
+  done
+echo 

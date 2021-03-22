@@ -1,0 +1,163 @@
+{\rtf1\ansi\ansicpg1254\deff0\nouicompat\deflang1055{\fonttbl{\f0\fnil\fcharset162 Calibri;}{\f1\fnil\fcharset0 Calibri;}{\f2\fnil\fcharset238 Calibri;}}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs22 ---UNIX File System--- Chapter 2 sayfa 2\par
+UNIX i\f1\lang1033\'e7\f0\lang1055 erisinde her\f2\'ba\f0 ey birer "dosyad\f2\u305?\f0 r" (programlar textler terminaller vs.)\par
+Dizin de bir dosyad\f2\u305?\f0 r.(Di\f2\u287?\f0 er dosyalar\f2\u305?\f0  tutan bir dosya),\par
+UNIX de s\f1\lang1033\'fc\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055 c\f1\lang1033\'fc\f0\lang1055  harfleri yoktur. File system donan\f2\u305?\f0 ma mant\f2\u305?\f0 ksal bir aray\f1\lang1033\'fc\f0\lang1055 z sa\f2\u287?\f0 l\f2\u305?\f0 yor ki eri\f2\'ba\f0 ebilelim\par
+\par
+-----Working Directory---- Chapter 2 sayfa 3\par
+pwd dir.\par
+\f2\'aa\f0 u anda \f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\f0 t\f2\u305?\u287?\u305?\f0 m\f2\u305?\f0 z dizinin kendisidir. \f1\lang1033\'c7\f0\lang1055 al\f2\u305?\'ba\f0 ma dizini.\par
+Absolute path basar.(Roottan itibaren g\f1\lang1033\'f6\f0\lang1055 sterir bulundu\f2\u287?\f0 umuz yeri, en \f1\lang1033\'fc\f0\lang1055 st dizinden)\par
+Siz ba\f2\'ba\f0 ka bir dizin belirlemedi\f2\u287?\f0 iniz s\f1\lang1033\'fc\f0\lang1055 rece, komut sizin i\f2\'ba\f0 leminizi Working Directory de ger\f1\lang1033\'e7\f0\lang1055 ekle\f2\'ba\f0 ece\f2\u287?\f0 inizi varsayar.\par
+Home dizini, bizim ki\f2\'ba\f0 isel kullan\f2\u305?\f0 c\f2\u305?\f0  alan\f2\u305?\f0 m\f2\u305?\f0 zd\f2\u305?\f0 r. -user1\par
+cd home/kullaniciadi yerine cd -kullaniciadi kullan\f2\u305?\f0 labilir.\par
+\par
+------Unix File Hierarchy------  chapter 2 sayfa 5\par
+Dizinler d\f1\lang1033\'fc\f0\lang1055 z dosyalar\f2\u305?\f0  ve di\f2\u287?\f0 er \f2\'ba\f0 eyleri bar\f2\u305?\f0 nd\f2\u305?\f0 rabilir.\par
+Unix \f1\lang1033\'f6\f0\lang1055 zel bir dosya uzant\f2\u305?\f0 s\f2\u305?\f0 n\f2\u305?\f0  tan\f2\u305?\f0 maz.\par
+\par
+---Unix Paths-- chapter 2 sayfa 6-7\par
+Dizinler shasl ile birlirinden ayr\f2\u305?\f0 l\f2\u305?\f0 r.\par
+Absolute path roottan ba\f2\'ba\f0 layarak hedefe do\f2\u287?\f0 ru ilerleyen yoldur.\par
+Relative path \f2\'ba\f0 u anki \f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\f0 ma dizininden ba\f2\'ba\f0 lar\par
+\par
+------Some Stangard Directories ---- chapter 2 sayfa 8\par
+/- root directory\par
+/dev blok ve karakter ayg\f2\u305?\f0 t dizini\par
+/etc host ile ilgili spesifik ayarlar\f2\u305?\f0 n yap\f2\u305?\f0 ld\f2\u305?\u287?\u305?\f0  bir dizin.\par
+/home kullan\f2\u305?\f0 c\f2\u305?\f0 lar\f2\u305?\f0 n home dizinleri vard\f2\u305?\f0 r, burada bar\f2\u305?\f0 n\f2\u305?\f0 rlar.\par
+/lib \f1\lang1033\'e7\f0\lang1055 e\f2\'ba\f0 itli diller i\f1\lang1033\'e7\f0\lang1055 in k\f1\lang1033\'fc\f0\lang1055 t\f1\lang1033\'fc\f0\lang1055 phane dizini.\par
+//sbin sistem i\f1\lang1033\'e7\f0\lang1055 in \par
+/tmp ge\f1\lang1033\'e7\f0\lang1055 ici dosyalar\par
+/usr kullan\f2\u305?\f0 c\f2\u305?\f0  programlar\f2\u305?\f0  uygulamalar\f2\u305?\f0 n\f2\u305?\f0 n bulundu\f2\u287?\f0 u\par
+/var sistem dosyalar\f2\u305?\f0  burada tutuluyor. (loglar, emailler)\par
+\par
+----Changing Directories----- chapter 2 sayfa 9\par
+cd \f1\lang1033\'e7\f0\lang1055 al\f2\u305?\'ba\f0 ma dizininizi de\f2\u287?\f0 i\f2\'ba\f0 tirir\par
+absoulute veya relative path kullanabiliriz.\par
+cd hi\f1\lang1033\'e7\f0\lang1055  bir arg\f1\lang1033\'fc\f0\lang1055 man olmadan da tilda ile kullan\f2\u305?\f0 labilir direk roota gider.\par
+E\f2\u287?\f0 er \f1\lang1033\'f6\f0\lang1055 nceki y\f2\u305?\f0 llarda \f1\lang1033\'fc\f0\lang1055 retilen bir dosya varsa ls sorgular\f2\u305?\f0 nda saat bilgisi gelmiyor, sene bilgisi geliyor 2017 2018 vs. \f1\lang1033\'d6\f0\lang1055 NEML\f2\u304?\f0 !!!!!!!!!!!!! Standart dizinler i\f1\lang1033\'e7\f0\lang1055 in 4096 standart bir de\f2\u287?\f0 erdir boyut.\par
+\par
+LS \f1\lang1033\'c7\f2\lang1055\u305?\f0 kt\f2\u305?\f0 lar\f2\u305?\f0 nda\par
+1. K\f2\u305?\f0 s\f2\u305?\f0 mdaki ilk karakter dosyan\f2\u305?\f0 n tipini verir. d olan dizin - olan d\f1\lang1033\'fc\f0\lang1055 z text dosyas\f2\u305?\f0  gibi bi\f2\'ba\f0 ey. l de link dir.\par
+1.K\f2\u305?\f0 s\f2\u305?\f0 m\f2\u305?\f0 n son 9 karakteri nin ilk 3 \f1\lang1033\'fc\f0\lang1055  kullan\f2\u305?\f0 c\f2\u305?\f0 ya, ikinci 3 \f1\lang1033\'fc\f0\lang1055  gruplara, \f1\lang1033\'fc\'e7\'fc\f0\lang1055 nc\f1\lang1033\'fc\f0\lang1055  3 l\f1\lang1033\'fc\f0\lang1055  ise d\f2\u305?\'ba\f0 ar\f2\u305?\f0 ya olan izinlerle ilgili. -rwrwrwrwrr gibi\par
+ls \f1\lang1033\'e7\f2\lang1055\u305?\f0 kt\f2\u305?\f0 s\f2\u305?\f0 ndaki "total", blok alt\f2\u305?\f0 ndaki dosyalar\f2\u305?\f0 n toplam diskte toplad\f2\u305?\u287?\u305?\f0  blok say\f2\u305?\f0 s\f2\u305?\f0 n\f2\u305?\f0  veriyor.\par
+\par
+-----Dosya tipleri sayfa 11-----\par
+Binary(pdf dosyas\f2\u305?\f0 ,resim dosyas\f2\u305?\f0 , exe dosyas\f2\u305?\f0 , word dosyas\f2\u305?\f0 ) veya text ler Plain(-) text\par
+Directory (d) ger\f1\lang1033\'e7\f0\lang1055 ek dosyad\f2\u305?\f0 r, ba\f2\'ba\f0 ka bir dosya seti k\f1\lang1033\'fc\f0\lang1055 mesini i\f1\lang1033\'e7\f0\lang1055 erisinde bar\f2\u305?\f0 nd\f2\u305?\f0 r\f2\u305?\f0 r.\par
+Link(l) Bir ba\f2\'ba\f0 ka dizine i\f2\'ba\f0 aret\f1\lang1033\'e7\f0\lang1055 i tutuyor.\par
+Special da b diskler veya rovlar, c i\f1\lang1033\'e7\f0\lang1055 in ise karakter dir keyword veya joystick.\par
+\ldblquote -\rdblquote  i\f2\'baareti ile g\f1\lang1033\'f6sterilenler normal dosyalard\f2\u305?r.( .txt, .log, .cfg, .ini vb)\par
+\ldblquote d\rdblquote  harfi ile g\f1\'f6sterilenler dizinlerdir.\par
+\ldblquote c\rdblquote  harfi ile g\'f6sterilenler \ldblquote character device file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Bu dosyalar donan\u305?m s\f1\'fcr\'fcc\'fclerine eri\f2\'baim sa\u287?layan basit aray\f1\'fczlerdir. Burada aray\'fcz kelimesinden grafik aray\'fcz anla\f2\'ba\u305?lmas\u305?n. Belki \ldblquote aray\f1\'fczlerdir\rdblquote  demek yerine \ldblquote k\'f6pr\'fclerdir\rdblquote  demek daha do\f2\u287?ru olabilir.  \f1\'d6rne\f2\u287?in yaz\u305?c\u305?lar, taray\u305?c\u305?lar gibi \f1\'e7evre birimlerine eri\f2\'bamede kullan\u305?l\u305?r.\par
+\ldblquote b\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote block device file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. \ldblquote character device file\rdblquote  olarak adland\u305?r\u305?lan dosyalarla benzerlik g\f1\'f6sterirler. Harddisk, ram gibi birimlere eri\f2\'bamede kullan\u305?l\u305?rlar.\par
+\ldblquote s\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote local socket file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Process\rquote ler aras\u305?nda haberle\'bamek i\f1\'e7in kullan\f2\u305?l\u305?rlar. Genelde X windows, syslog gibi servisler taraf\u305?ndan kullan\u305?l\u305?r.\par
+\ldblquote p\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote named pipe file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Socket dosyalar\u305? gibi bunlarda process\rquote ler aras\u305?nda veri g\f1\'f6nderilirken kullan\f2\u305?l\u305?r.\par
+\ldblquote l\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote symbolic link\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Bu dosyalar sayesinde bir sistem y\f1\'f6neticisi bir dosyaya i\f2\'baaret eden birden fazla dosya \f1\'fcretebilir.\par
+ \ldblquote D\rdblquote  harfi ile g\'f6sterilenler \ldblquote door file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Bu dosyalar bir istemci ile sunucu aras\u305?ndaki haberle\'bamede kullan\u305?lan \f1\'f6zel dosyalard\f2\u305?r.\f0\lang1055\par
+\f1\lang1033\'d6\f0\lang1055 DEVVVVVV ba\f2\'ba\f0 ka harfler de var ara\f2\'ba\f0 t\f2\u305?\f0 r! \par
+\par
+---Manipulating Files--- sayfa 12\par
+touch yeni bir dosya olu\f2\'ba\f0 turmaya veya var olan dosyan\f2\u305?\f0 n son modifiye tarihini de\f2\u287?\f0 i\f2\'ba\f0 tirmeye yarar.\par
+touch dosyaadi ------ dosya olu\f2\'ba\f0 turur.\par
+mv komutu ta\f2\'ba\u305?\f0 maya yar\f2\u305?\f0 yor.\par
+mv ubuntu windows ----- ubuntu isimli dosyan\f2\u305?\f0 n ad\f2\u305?\f0 n\f2\u305?\f0  windows yapt\f2\u305?\f0 .\par
+mv ubuntu ../     bir \f1\lang1033\'fc\f0\lang1055 st dizine ta\f2\'ba\u305?\f0 d\f2\u305?\f0 , veya uzun dizin de verebiliriz ba\f2\'ba\f0 ka yola ta\f2\'ba\u305?\f0 mak i\f1\lang1033\'e7\f0\lang1055 in.\par
+cp kopyal\f2\u305?\f0 yor\par
+rm siliyor.\par
+mkdir dizin yani klas\f1\lang1033\'f6\f0\lang1055 r olu\f2\'ba\f0 turuyor.\par
+rmdir dizini siler.\par
+man yad\f2\u305?\f0 m komutu\par
+rm-r komp\f1\lang1033\'e7\f0\lang1055 e u\f1\lang1033\'e7\f0\lang1055 urur her\f2\'ba\f0 eyi\par
+ln -s sembolik link olu\f2\'ba\f0 turur. windowstaki k\f2\u305?\f0 sayol gibi.\par
+omit -s ayn\f2\u305?\f0  cihaz\f2\u305?\f0 n ayn\f2\u305?\f0  fiziksel partitionunda olmak zorundad\f2\u305?\f0 r. hardlink olu\f2\'ba\f0 turur. \par
+\par
+-------------------------------\f1\lang1033\'d6\f0\lang1055 DEVLER---------------------\par
+hardlink ara\f2\'ba\f0 t\f2\u305?\f0 rma yap?\par
+Hardlink do\f2\u287?\f0 rudan dosyay\f2\u305?\f0  g\f1\lang1033\'f6\f0\lang1055 steren adrestir.  Dosyalar fiziksel bir n\f1\lang1033\'fc\f0\lang1055 merik adreste bulunuyor. \f2 Linux seviyesinde bu inode numaras\u305? oluyor. Hard linki ayn\u305? olan dosyalar\u305?n bu numaras\u305? da ayn\u305? oluyor.\f0\par
+Special da b diskler veya rovlar, c i\f1\lang1033\'e7\f0\lang1055 in ise karakter dir keyword veya joystick.\par
+\f1\lang1033\'d6\f0\lang1055 DEVVVVVV ba\f2\'ba\f0 ka harfler de var ara\f2\'ba\f0 t\f2\u305?\f0 r! \par
+\ldblquote -\rdblquote  i\f2\'baareti ile g\f1\lang1033\'f6sterilenler normal dosyalard\f2\u305?r.( .txt, .log, .cfg, .ini vb)\par
+\ldblquote d\rdblquote  harfi ile g\f1\'f6sterilenler dizinlerdir.\par
+\ldblquote c\rdblquote  harfi ile g\'f6sterilenler \ldblquote character device file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Bu dosyalar donan\u305?m s\f1\'fcr\'fcc\'fclerine eri\f2\'baim sa\u287?layan basit aray\f1\'fczlerdir. Burada aray\'fcz kelimesinden grafik aray\'fcz anla\f2\'ba\u305?lmas\u305?n. Belki \ldblquote aray\f1\'fczlerdir\rdblquote  demek yerine \ldblquote k\'f6pr\'fclerdir\rdblquote  demek daha do\f2\u287?ru olabilir.  \f1\'d6rne\f2\u287?in yaz\u305?c\u305?lar, taray\u305?c\u305?lar gibi \f1\'e7evre birimlerine eri\f2\'bamede kullan\u305?l\u305?r.\par
+\ldblquote b\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote block device file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. \ldblquote character device file\rdblquote  olarak adland\u305?r\u305?lan dosyalarla benzerlik g\f1\'f6sterirler. Harddisk, ram gibi birimlere eri\f2\'bamede kullan\u305?l\u305?rlar.\par
+\ldblquote s\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote local socket file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Process\rquote ler aras\u305?nda haberle\'bamek i\f1\'e7in kullan\f2\u305?l\u305?rlar. Genelde X windows, syslog gibi servisler taraf\u305?ndan kullan\u305?l\u305?r.\par
+\ldblquote p\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote named pipe file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Socket dosyalar\u305? gibi bunlarda process\rquote ler aras\u305?nda veri g\f1\'f6nderilirken kullan\f2\u305?l\u305?r.\par
+\ldblquote l\rdblquote  harfi ile g\f1\'f6sterilenler \ldblquote symbolic link\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Bu dosyalar sayesinde bir sistem y\f1\'f6neticisi bir dosyaya i\f2\'baaret eden birden fazla dosya \f1\'fcretebilir.\par
+ \ldblquote D\rdblquote  harfi ile g\'f6sterilenler \ldblquote door file\rdblquote  olarak adland\f2\u305?r\u305?lan dosyalard\u305?r. Bu dosyalar bir istemci ile sunucu aras\u305?ndaki haberle\'bamede kullan\u305?lan \f1\'f6zel dosyalard\f2\u305?r.\par
+\par
+\par
+\f0\lang1055 -------File Ownership sf 15------\par
+Her bir dosyan\f2\u305?\f0 n tek bir sahibi vard\f2\u305?\f0 r.\par
+--chown komutu ile sahibi de\f2\u287?\f0 i\f2\'ba\f0 tirilebilir.\par
+Yaln\f2\u305?\f0 zca root bu komutu kullanabilir.\par
+yaln\f2\u305?\f0 zca 1 dosya 1 gruba dahildir.\par
+u User g Group o World  (ugo kelimesi) file permissionlar.\par
+--man chown kodunu dene. (man o kod hakk\f2\u305?\f0 nda yard\f2\u305?\f0 mlar\f2\u305?\f0  getiriyordu.)\par
+"sudo su" komutu ile login yapt\f2\u305?\f0 .\par
+"chown root selam" yazarak r\f1\lang1033\'fc\f0\lang1055 tbeyi ald\f2\u305?\f0 .\par
+"exit" yazarak root kullan\f2\u305?\f0 c\f2\u305?\f0 s\f2\u305?\f0 ndan \f1\lang1033\'e7\f2\lang1055\u305?\f0 kt\f2\u305?\f0 .\par
+tekrar ls ile listeleme yapt\f2\u305?\u287?\u305?\f0 nda selam dosyas\f2\u305?\f0 n\f2\u305?\f0 n sahibi root olmu\f2\'ba\f0  oldu. listede g\f1\lang1033\'f6\f0\lang1055 rd\f1\lang1033\'fc\f0\lang1055  onu sende dene.\par
+------File Permissions ---- sf 16\par
+3 farkl\f2\u305?\f0  izin t\f1\lang1033\'fc\f0\lang1055 r\f1\lang1033\'fc\f0\lang1055  var. Sahibinin izinleri, sahibinin bulundu\f2\u287?\f0 u grubun izinleri, bunlar\f2\u305?\f0 n haricinde d\f2\u305?\'ba\f0  d\f1\lang1033\'fc\f0\lang1055 nyaya verilecek izinler. (u-g-o simgeleri user group ve d\f2\u305?\'ba\f0  kullan\f2\u305?\f0 c\f2\u305?\f0 lar)\par
+----sf 17-----\par
+chmod 777 textfile tam yetki verir.\par
+touch yirmiekim  (yirmiekim diye bir dosya olu\f2\'ba\f0 turdu )\par
+chmod 700\par
+chmod 755  --- standard genelde verilen izin budur webde.\par
+chmod 444 tam g\f1\lang1033\'fc\f0\lang1055 venlik (sql injection engellemek i\f1\lang1033\'e7\f0\lang1055 in gerekebilir.) Hi\f1\lang1033\'e7\f0\lang1055  kimse yazma yapam\f2\u305?\f0 yor.\par
+chmdod g+rw textfile  -->>> bu kodu dene.\par
+\par
+-----File Modification date ---- sayfa 18\par
+touch komutu da dosyan\f2\u305?\f0 n tarihini \f2\'ba\f0 u anki tarihe g\f1\lang1033\'fc\f0\lang1055 ncellemek amac\f2\u305?\f0  ile kullan\f2\u305?\f0 labilir\par
+E\f2\u287?\f0 er dosya yoksa touch yeni dosya olu\f2\'ba\f0 turur, yoksa tarih de\f2\u287?\f0 i\f2\'ba\f0 iyor.\par
+---sf 19---\par
+cat concatenate in k\f2\u305?\f0 salt\f2\u305?\f0 lm\f2\u305?\'ba\u305?\f0 t\f2\u305?\f0 r.\par
+cat komutu ile dosyan\f2\u305?\f0 n i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 ini g\f1\lang1033\'f6\f0\lang1055 rebiliriz.\par
+cat textfile1 textfile2\par
+less/more textfile \par
+(dosya ismi boyutuba g\f1\lang1033\'f6\f0\lang1055 re bosluk koyan kod)\par
+---wildcards in file names ---- sf 20 REG EXP! \f1\lang1033\'d6\f0\lang1055 NEML\f2\u304?\f0  / bunlarla baya bir i\f2\'ba\f0 imiz olcak.\par
+*herhangi bir string i\f1\lang1033\'e7\f0\lang1055 in gelebilir veya gelmeyebilir.\par
+? herhangi bir karakter i\f1\lang1033\'e7\f0\lang1055 in. doc? tek bir karakter getiriyor veya getirmiyor.\par
+[ ] bir karakter aral\f2\u305?\u287?\u305?\f0 n\f2\u305?\f0  belirtir (a-c) ad an c ye kadar herhangi bir karakter. a veya b veya c getirir.  [a-c]* i\f1\lang1033\'e7\f0\lang1055 in y\f2\u305?\f0 ld\f2\u305?\f0 z oldu\f2\u287?\f0 u i\f1\lang1033\'e7\f0\lang1055 in bo\f2\'ba\f0  string bile  olabilir. Ki\f2\'ba\f0 inin isim yaz\f2\u305?\f0 p yazmad\f2\u305?\u287?\u305?\f0 n\f2\u305?\f0  kontrol edin? Te\f2\'ba\f0 ekfon numaras\f2\u305?\f0 n\f2\u305?\f0  m\f2\u305?\f0  girmi\f2\'ba\f0 ? Mailini d\f1\lang1033\'fc\f0\lang1055 zg\f1\lang1033\'fc\f0\lang1055 n girmi\f2\'ba\f0  mi?\par
+----Getting Help on Unix commands--- sf 21\par
+man komutu ile komut ile ilgili t\f1\lang1033\'fc\f0\lang1055 m d\f1\lang1033\'f6\f0\lang1055 k\f1\lang1033\'fc\f0\lang1055 mantasyonlar\f2\u305?\f0  getirir.\par
+apropos kelime kodu yanda belirtti\f2\u287?\f0 imiz keyword u i\f1\lang1033\'e7\f0\lang1055 eren t\f1\lang1033\'fc\f0\lang1055 m konumlar\f2\u305?\f0  getirir. \f1\lang1033\'f6\f0\lang1055 rn apropos list\par
+locate string komutu stringi i\f1\lang1033\'e7\f0\lang1055 eren tam yoldaki t\f1\lang1033\'fc\f0\lang1055 m dosyalar\f2\u305?\f0  g\f1\lang1033\'f6\f0\lang1055 steriyor \par
+\f1\lang1033\'f6\f0\lang1055 rn locate home/neo\par
+\par
+locate home/neo > cikti     kodu  b\f1\lang1033\'fc\f0\lang1055 y\f1\lang1033\'fc\f0\lang1055 k i\f2\'ba\f0 aretinden sonra verilen dosya ismine aktar\f2\u305?\f0 l\f2\u305?\f0 r. t\f1\lang1033\'fc\f0\lang1055 m dosyalar\f2\u305?\f0  bas\f2\u305?\f0 yor bu \f2\'ba\f0 ekilde yaparsak, yolda olan olmayan.\par
+--Other file systems- sf25\par
+tmpfs\par
+specfs  -- \f1\lang1033\'f6\f0\lang1055 zel karakter ve blok ayg\f2\u305?\f0 tlar\f2\u305?\f0 na rei\f2\'ba\f0 im sa\f2\u287?\f0 lar.\par
+lofs   sanal dosya sistemleri olu\f2\'ba\f0 turuyor ki var olan dosyalar\f2\u305?\f0 n \f1\lang1033\'fc\f0\lang1055 zerine yazabilir.\par
+tfs   var olan dosyalar\f2\u305?\f0 n \f1\lang1033\'fc\f0\lang1055 zerine bir dosya sistemi kurulmas\f2\u305?\f0 n\f2\u305?\f0  sa\f2\u287?\f0 l\f2\u305?\f0 yor.\par
+fdfs i\f2\'ba\f0 aret\f1\lang1033\'e7\f0\lang1055 iler yard\f2\u305?\f0 m\f2\u305?\f0  ile dosya i\f1\lang1033\'e7\f0\lang1055 eri\f2\u287?\f0 ine eri\f2\'ba\f0 im sa\f2\u287?\f0 lar\par
+namefs streams lar\f2\u305?\f0  kullanarak dosyalar \f1\lang1033\'fc\f0\lang1055 zerindeki dosya i\f2\'ba\f0 aret\f1\lang1033\'e7\f0\lang1055 ilerini birle\f2\'ba\f0 tiriyor.\par
+swapfs swap alan\f2\u305?\f0 n\f2\u305?\f0 n kernel alan\f2\u305?\f0 n\f2\u305?\f0 n y\f1\lang1033\'f6\f0\lang1055 netilmesi i\f1\lang1033\'e7\f0\lang1055 in kullan\f2\u305?\f0 l\f2\u305?\f0 yor.\par
+(Buralardan bir ka\f1\lang1033\'e7\f0\lang1055  tanesi eksik kald\f2\u305?\f0  chapter 2 den \f1\lang1033\'e7\f0\lang1055 evir \f1\lang1033\'fc\f0\lang1055 st taraf\f2\u305?\f0 .)\par
+\par
+\par
+ \par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\f1\lang31\par
+}
+ 

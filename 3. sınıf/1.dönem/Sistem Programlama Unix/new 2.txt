@@ -1,0 +1,57 @@
+--sf2--
+Pencere sistemleri grafiksel arayüz sağlıyormuş pencereler ikonlar sayesinde.
+Kullanılabilirliği artırıyor (kullanışlıdır) çoklu araçlara erişim konsuunda
+ve uygulamalara erişim konusunda.
+Fare joystick tabletler gibi şeylerle direk yönetim sağlayabiliyoruz sistem üzerinde.
+--sf3--
+Unix pencere sistemlerinden önce komut satırları ile çalışmak üzere tasarlanmış onun
+üzerine diğer yenilikler geliştirilmiş.
+Modern Unix sistemleri pencere sistemlerini destekliyor ve pencere sistemlerinin
+avantajlarını kullanmaya olanak sağıyor aynı zamanda profesyonel kullanım için
+komut satırlarının kullanımına da izin veriyor.(bu siz ineklerisiniz!)
+--sf4--
+Bütün UNIX sistemleri X Windows (XFree86) temeline inşa edilmiş. 
+Standart Version: X11R6
+X Server:
+Donanım Aryüzü (ekran, fare, vs.)
+Ekran boşluklarını yönetiyor
+Basit grafikler çiziyor
+X Clientlere pencere tanımalamaları sağlıyor.
+Yerel ve uzaktan clientleri destekliyor.
+--sf5--
+x-Client server mimarisi
+X ağ üzerinde çalışmak üzere tasarlanmış
+X server: Progrmın çıktısının gösterileceği makina üzerinde koşan yazılımın kendisi. 
+X client: Aynı veya başka bir makinada koşan client.
+Client çizme ve diğer Xclient komutlarını gönderiyor sonuçları gösteren sunucuya.
+--sf6--
+X'in tarihsel gösterimi:
+Kullanıcılar XTerminal de Sat? yapar – grafiksel terminaller X server'de koşabilir.
+, ama işletim sisteminde koşamazlar (OS)
+Uzak bir UNIX makinasına login olmuş kullanıcılar veya diğer İşletim sistemi (OS) destekleyen
+X Clientler grafik arayüzler ile uygulamaları yönetebilirler, kombine bir şekilde
+birden fazla bilgisayar üzerinde çalışan uygulamaları koşabilirler.
+--sf7--
+X'in getirdiği yenilikler:
+Transparent remote execution??
+Her bir programa kendilerine ait görsel ekranlar veriyor.
+Önemli pencereleme işlemlerini de içerisinde kapsıyor.
+
+Window damage---Pencere hasarı?
+Window reveal events ??
+Backing store Arka dükkan??
+X11  programları yüksek derecede taşınabilirdir.
+--sf8--
+Pencere yöneticisi:
+Pencere yöneticisi X11 in en üstünde koşar masaüstü yöneticisi ile birlikte. 
+
+Pencereler üzerindeki Kenarlıklar, Sliderlar, ve diğer çıkartmaları arayüzde daha
+görülebilir ve hissedilebilir olmasını sağlar.
+Örnekler:
+kwin - KDE için varsayılan.
+metacity – -GNOME için varsayılan.
+mwm – Motif bağımsız pencere yöneticisi.
+--sf9--
+
+
+

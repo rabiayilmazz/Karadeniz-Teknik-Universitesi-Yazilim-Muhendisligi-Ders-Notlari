@@ -1,0 +1,8 @@
+# Makefile example 3
+
+OBJS = main.o iodat.o dorun.o
+CC = /usr/bin/gcc
+
+program : ${OBJS}
+	${CC} -o $@ ${OBJS}
+

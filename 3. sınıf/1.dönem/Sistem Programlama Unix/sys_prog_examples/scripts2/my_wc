@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# put the output of the wc command in an array
+output=(`wc $1`)
+
+# check if there is a second argument
+if [[ -n $2 ]] 
+then
+	# print appropriate text depending on first letter of second argument
+	case $2 in
+		l*) echo "There are ${output[0]} lines in file \"$1\"" ;;
+		w*) echo "There are ${output[1]} words in file \"$1\"" ;;
+		c*) echo "There are ${output[2]} characters in file \"$1\"" ;;
+		
+		# print usage message
+		*) echo "Usage: my_wc file [c|w|l]" ;;
+	esac
+
+# if no second argument, print all wc information
+else
+	echo "(${output[0]}, ${output[1]}, ${output[2]}) (lines, words, characters) in file \"$1\""
+
+fi
+

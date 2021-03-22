@@ -1,0 +1,7 @@
+if who | grep -s john > /dev/null
+then
+  echo john is logged in CS Lab
+else
+  echo john not available in CS Lab
+fi
+

@@ -1,0 +1,13 @@
+select COMPONENT in comp1 comp2 comp3 all none
+do
+  case $COMPONENT in
+    comp1|comp2|comp3) CompConf $COMPONENT ;;
+    all) CompConf comp1
+         CompConf comp2
+         CompConf comp3
+         ;;
+    none) break ;;
+    *) echo "ERROR: Invalid selection, $REPLY." ;;
+  esac
+done
+

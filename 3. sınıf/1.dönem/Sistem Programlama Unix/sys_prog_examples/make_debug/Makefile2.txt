@@ -1,0 +1,14 @@
+# Makefile example 2
+
+OBJS = main.o iodat.o dorun.o
+CC = /usr/bin/gcc
+
+program : ${OBJS}
+	${CC} -o $@ ${OBJS}
+main.o : main.c
+	${CC} -c $?
+iodat.o : iodat.c
+	${CC} -c $?
+dorun.o : dorun.c
+	${CC} -c $?
+

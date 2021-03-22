@@ -1,0 +1,11 @@
+#!/bin/bash
+while echo "Please enter command"
+  read response
+  do
+    case "$response" in
+      'done') break          ;; # no more commands
+          "") continue 	     ;; # null command
+           *) eval $response ;; # do the command
+     esac
+  done
+

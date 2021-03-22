@@ -1,0 +1,8 @@
+#This script takes two file names and copies the first file into the second one
+echo "Please Enter source file name:"
+read source
+echo "Enter the target file name:"
+read target
+cp $source $target
+echo file $source is copied into the $target
+
