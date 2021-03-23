@@ -14,4 +14,5 @@
   *
   *
 * epok döngü sayısı ve paket boyutu:
-* düzenlileştirme: 
+* düzenlileştirme:
+* Veri çoğaltma: (data augmentation)
