@@ -1,0 +1,9 @@
+Bu program asýl amacý hash algoritmasý ile sözlük.txt içindeki bilgilerin yeniden sözlük1.txt içinde
+organize edilmesidir.Hash algoritmasý kiþinin kendi algoritmasýdýr. Bir çeþit adres bilgisi ile direk
+kelimeye eriþimdir.Program öncelikle sözlük.txt den verileri okuyarak yeniden organize ederek sözlük1.txt 
+içine yerleþtirir.Hash algoritmasýnda önemli olan iki kriter vardýr. Birincisi dosya boyutunu azaltmak
+ikincisi ise çakýþma sayýsýnýn az olmasýdýr.Ama ikisi birbirine karþýdýr.Biraz daha açýklarsak çakýþma
+çok olursa daha sýký yerleþtirme yapacaðýndan dosya boyutu küçülür ama oluþma zamaný (disket için) oldukça
+uzar.Eðer çakýþma sayýsý az olursa bu durumda oluþan dosya boyutu çok büyür ama bu sefer oluþma zamaný
+(disket için) oldukça azalýr. Bu program disketlerde çalýþtýrýlýnca daha anlamlý olur. Olay þudurki en 
+iyi hash algoritmasýný bulup hem oluþma zamanýný hemde dosya boyutunu ortalama seviyeye çekmek gerekir.

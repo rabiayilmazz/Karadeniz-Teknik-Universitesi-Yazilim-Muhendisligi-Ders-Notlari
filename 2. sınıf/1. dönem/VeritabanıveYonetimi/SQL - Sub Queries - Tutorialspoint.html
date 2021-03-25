@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0054)https://www.tutorialspoint.com/sql/sql-sub-queries.htm -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.mui-textfield.mui-textfield--float-label > label {-webkit-transition:all .15s ease-out;-moz-transition:all .15s ease-out;-o-transition:all .15s ease-out;transition:all .15s ease-out;}</style><style type="text/css">@keyframes mui-btn-inserted{from{transform:none;}to{transform:none;}}.mui-btn{animation-duration:0.0001s;animation-name:mui-btn-inserted;}@keyframes mui-dropdown-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-dropdown-inserted;}@keyframes mui-btn-inserted,mui-dropdown-inserted{from{transform:none;}to{transform:none;}}.mui-btn[data-mui-toggle="dropdown"]{animation-duration:0.0001s;animation-name:mui-btn-inserted,mui-dropdown-inserted;}@keyframes mui-tab-inserted{from{transform:none;}to{transform:none;}}[data-mui-toggle="tab"]{animation-duration:0.0001s;animation-name:mui-tab-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > input{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-textfield-inserted{from{transform:none;}to{transform:none;}}.mui-textfield > textarea{animation-duration:0.0001s;animation-name:mui-textfield-inserted;}@keyframes mui-select-inserted{from{transform:none;}to{transform:none;}}.mui-select > select{animation-duration:0.0001s;animation-name:mui-select-inserted;}@keyframes mui-node-inserted{from{transform:none;}to{transform:none;}}.mui-select > select ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-inserted;}@keyframes mui-node-disabled{from{transform:none;}to{transform:none;}}.mui-select > select:disabled ~ .mui-event-trigger{animation-duration:0.0001s;animation-name:mui-node-disabled;}</style>
+<title>SQL - Sub Queries - Tutorialspoint</title>
+
+<meta name="description" content="SQL - Sub Queries - A Subquery or Inner query or a Nested query is a query within another SQL query and embedded within the WHERE clause.">
+<meta name="keywords" content="C, C++, Python, Java, HTML, CSS, JavaScript, SQL, PHP, jQuery, XML, DOM, Bootstrap, Tutorials, Articles, Programming, training, learning, quiz, preferences, examples, code">
+<link rel="canonical" href="https://www.tutorialspoint.com/sql/sql-sub-queries.htm">
+<link rel="shortcut icon" href="https://www.tutorialspoint.com/favicon.ico" type="image/x-icon">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+<link rel="stylesheet" href="./SQL - Sub Queries - Tutorialspoint_files/style-min-v1.css">
+<script type="text/javascript" async="" src="./SQL - Sub Queries - Tutorialspoint_files/analytics.js.indir"></script><script src="./SQL - Sub Queries - Tutorialspoint_files/script-min-v1.js.indir"></script><link rel="stylesheet" type="text/css" href="./SQL - Sub Queries - Tutorialspoint_files/prettify.css">
+<script>function printPage() { window.print(); }</script>
+<script data-cfasync="false" type="text/javascript">(function(w, d) { var s = d.createElement('script'); s.src = '//cdn.adpushup.com/40046/adpushup.js'; s.type = 'text/javascript'; s.async = true; (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s); })(window, document);</script><script src="./SQL - Sub Queries - Tutorialspoint_files/adpushup.js.indir" type="text/javascript" async=""></script>
+<style>
+.right-menu .mui-btn {
+    background-color:#57B847;
+}
+a.demo {
+    background:#57B847;
+}
+li.heading {
+    background:#57B847;
+}
+.course-box{background:#57B847}
+.home-intro-sub p{color:#57B847}
+</style>
+</head>
+<body>
+<header id="header" class="fixed">
+<!-- Top sub-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid top-menu">
+<div class="mui-container">
+<div class="top-menu-item home">
+<a href="https://www.tutorialspoint.com/index.htm" target="_blank" title="TutorialsPoint - Home"><i class="fal fa-home"></i> <span>Home</span></a>
+</div>
+<div class="top-menu-item qa">
+<a href="https://www.tutorialspoint.com/about/about_careers.htm" target="_blank" title="Job @ Tutorials Point"><i class="fa fa-suitcase"></i> <span>Jobs</span></a>
+</div>
+<div class="top-menu-item tools">
+<a href="https://www.tutorialspoint.com/online_dev_tools.htm" target="_blank" title="Tools - Online Development and Testing Tools"><i class="fal fa-cogs"></i> <span>Tools</span></a>
+</div>
+<div class="top-menu-item coding-ground">
+<a href="https://www.tutorialspoint.com/codingground.htm" target="_blank" title="Coding Ground - Free Online IDE and Terminal"><i class="fal fa-code"></i> <span>Coding Ground </span></a> 
+</div>
+<div class="top-menu-item current-affairs">
+<a href="https://www.tutorialspoint.com/current_affairs.htm" target="_blank" title="Daily Current Affairs"><i class="fal fa-layer-plus"></i> <span>Current Affairs</span></a>
+</div>
+<div class="top-menu-item upsc-notes">
+<a href="https://www.tutorialspoint.com/upsc_ias_exams.htm" target="_blank" title="UPSC IAS Exams Notes - TutorialsPoint"><i class="fal fa-user-tie"></i> <span>UPSC Notes</span></a>
+</div>      
+<div class="top-menu-item online-tutoris">
+<a href="https://www.tutorialspoint.com/tutor_connect/index.php" target="_blank" title="Top Online Tutors - Tutor Connect"><i class="fal fa-user"></i> <span>Online Tutors</span></a>
+</div>
+<div class="top-menu-item whiteboard">
+<a href="https://www.tutorialspoint.com/whiteboard.htm" target="_blank" title="Free Online Whiteboard"><i class="fal fa-chalkboard"></i> <span>Whiteboard</span></a>
+</div>
+<div class="top-menu-item net-meeting">
+<a href="https://www.tutorialspoint.com/netmeeting.php" target="_blank" title="A free tool for online video conferencing"><i class="fal fa-chalkboard-teacher"></i> <span>Net Meeting</span></a> 
+</div>
+<div class="top-menu-item articles">
+<a href="https://www.tutorix.com/" target="_blank" title="Tutorx - The Best Learning App" rel="nofollow"><i class="fal fa-video"></i> <span>Tutorix</span></a> 
+</div>        
+<div class="social-menu-item">
+<a href="https://www.facebook.com/tutorialspointindia" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Facebook"><i class="fab fa-facebook-f"></i></a> 
+<a href="https://www.twitter.com/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Twitter"><i class="fab fa-twitter"></i></a>
+<a href="https://www.linkedin.com/company/tutorialspoint" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint @ Linkedin"><i class="fab fa-linkedin-in"></i></a>
+<a href="https://www.youtube.com/channel/UCVLbzhxVTiTLiVKeGV7WEBg" target="_blank" rel="nofollow" data-placement="bottom" title="tutorialspoint YouTube"><i class="fab fa-youtube"></i></a>
+</div>        
+</div>
+</div>
+<!-- Top sub-menu Ends Here -->
+<!-- Top main-menu Starts Here -->
+<div class="mui-appbar mui-container-fulid mui--appbar-line-height mui--z1 sticky" id="logo-menu">
+<div class="mui-container">
+<div class="left-menu">
+<a href="https://www.tutorialspoint.com/index.htm" title="Tutorialspoint">
+<img class="tp-logo" alt="tutorialspoint" src="./SQL - Sub Queries - Tutorialspoint_files/logo.png">
+</a>
+<div class="mui-dropdown">
+<a class="mui-btn mui-btn--primary categories" data-mui-toggle="dropdown"><i class="fa fa-th-large"></i> 
+<span>Categories <span class="mui-caret"></span></span></a>            
+<ul class="mui-dropdown__menu cat-menu">
+<li>
+<ul>
+<li><a href="https://www.tutorialspoint.com/academic_tutorials.htm"><i class="fa fa-caret-right"></i> Academic Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/big_data_tutorials.htm"><i class="fa fa-caret-right"></i> Big Data &amp; Analytics </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_programming_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Programming </a></li>
+<li><a href="https://www.tutorialspoint.com/computer_science_tutorials.htm"><i class="fa fa-caret-right"></i> Computer Science </a></li>
+<li><a href="https://www.tutorialspoint.com/database_tutorials.htm"><i class="fa fa-caret-right"></i> Databases </a></li>
+<li><a href="https://www.tutorialspoint.com/devops_tutorials.htm"><i class="fa fa-caret-right"></i> DevOps </a></li>
+<li><a href="https://www.tutorialspoint.com/digital_marketing_tutorials.htm"><i class="fa fa-caret-right"></i> Digital Marketing </a></li>
+<li><a href="https://www.tutorialspoint.com/engineering_tutorials.htm"><i class="fa fa-caret-right"></i> Engineering Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> Exams Syllabus </a></li>
+<li><a href="https://www.tutorialspoint.com/famous_monuments.htm"><i class="fa fa-caret-right"></i> Famous Monuments </a></li>
+<li><a href="https://www.tutorialspoint.com/gate_exams_tutorials.htm"><i class="fa fa-caret-right"></i> GATE Exams Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/latest_technologies.htm"><i class="fa fa-caret-right"></i> Latest Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/machine_learning_tutorials.htm"><i class="fa fa-caret-right"></i> Machine Learning </a></li>
+<li><a href="https://www.tutorialspoint.com/mainframe_tutorials.htm"><i class="fa fa-caret-right"></i> Mainframe Development </a></li>
+<li><a href="https://www.tutorialspoint.com/management_tutorials.htm"><i class="fa fa-caret-right"></i> Management Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/maths_tutorials.htm"><i class="fa fa-caret-right"></i> Mathematics Tutorials</a></li>
+<li><a href="https://www.tutorialspoint.com/microsoft_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Microsoft Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/misc_tutorials.htm"><i class="fa fa-caret-right"></i> Misc tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/mobile_development_tutorials.htm"><i class="fa fa-caret-right"></i> Mobile Development </a></li>
+<li><a href="https://www.tutorialspoint.com/java_technology_tutorials.htm"><i class="fa fa-caret-right"></i> Java Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/python_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> Python Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/sap_tutorials.htm"><i class="fa fa-caret-right"></i> SAP Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/scripting_lnaguage_tutorials.htm"><i class="fa fa-caret-right"></i>Programming Scripts </a></li>
+<li><a href="https://www.tutorialspoint.com/selected_reading.htm"><i class="fa fa-caret-right"></i> Selected Reading </a></li>
+<li><a href="https://www.tutorialspoint.com/software_quality_tutorials.htm"><i class="fa fa-caret-right"></i> Software Quality </a></li>
+<li><a href="https://www.tutorialspoint.com/soft_skill_tutorials.htm"><i class="fa fa-caret-right"></i> Soft Skills </a></li>
+<li><a href="https://www.tutorialspoint.com/telecom_tutorials.htm"><i class="fa fa-caret-right"></i> Telecom Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/upsc_ias_exams.htm"><i class="fa fa-caret-right"></i> UPSC IAS Exams </a></li>
+<li><a href="https://www.tutorialspoint.com/web_development_tutorials.htm"><i class="fa fa-caret-right"></i> Web Development </a></li>
+<li><a href="https://www.tutorialspoint.com/sports_tutorials.htm"><i class="fa fa-caret-right"></i> Sports Tutorials </a></li>
+<li><a href="https://www.tutorialspoint.com/xml_technologies_tutorials.htm"><i class="fa fa-caret-right"></i> XML Technologies </a></li>
+<li><a href="https://www.tutorialspoint.com/multi_language_tutorials.htm"><i class="fa fa-caret-right"></i> Multi-Language</a></li>
+<li><a href="https://www.tutorialspoint.com/questions_and_answers.htm"><i class="fa fa-caret-right"></i> Interview Questions</a></li>
+</ul>
+</li>
+</ul>
+<div class="clear"></div>
+</div> 
+</div>
+<div class="right-menu">
+<div class="toc-toggle">
+<a href="javascript:void(0);"><i class="fa fa-bars"></i></a>
+</div>
+<div class="mobile-search-btn">
+<a href="https://www.tutorialspoint.com/search.htm"><i class="fal fa-search"></i></a>
+</div>
+<div class="search-box">
+<form method="get" class="search-form" name="searchform" action="https://www.google.com/search" target="_blank" novalidate="">
+<input type="hidden" name="sitesearch" value="www.tutorialspoint.com" class="user-valid valid">
+<input class="header-search-box" type="text" id="search-string" name="q" placeholder="Search your favorite tutorials..." onfocus="if (this.value == &#39;Search your favorite tutorials...&#39;) {this.value = &#39;&#39;;}" onblur="if (this.value == &#39;&#39;) {this.value = &#39;Search your favorite tutorials...&#39;;}" autocomplete="off">
+<button><i class="fal fa-search"></i></button>
+</form>
+</div>
+<div class="menu-btn library-btn">
+<a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a>
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a> 
+</div>
+<div class="menu-btn videos-btn">
+<a href="https://www.tutorialspoint.com/questions/index.php"><i class="fa fa-location-arrow"></i> <span>Q/A</span></a>
+</div>
+<div class="menu-btn ebooks-btn">
+<a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a>
+</div>
+<div class="mui-dropdown">
+<button class="mui-btn mui-btn--primary mobile-menu" data-mui-toggle="dropdown" type="button">
+<span class="mui-caret"></span>
+</button>
+<ul class="mui-dropdown__menu">
+<li><a href="https://www.tutorialspoint.com/tutorialslibrary.htm"><i class="fal fa-cubes"></i> <span>Library</span></a></li>
+<li><a href="https://www.tutorialspoint.com/videotutorials/index.php"><i class="fal fa-video"></i> <span>Videos</span></a></li>
+<li><a href="https://store.tutorialspoint.com/"><i class="fal fa-book"></i> <span>eBooks</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<!-- Top main-menu Ends Here -->
+</header>
+<div class="mui-container-fluid content">
+<div class="mui-container">
+<!-- Tutorial ToC Starts Here -->
+<div class="mui-col-md-3 tutorial-toc">
+<div class="mini-logo">
+<img src="./SQL - Sub Queries - Tutorialspoint_files/sql-mini-logo.jpg" alt="SQL Services Tutorial">
+</div>
+<ul class="toc chapters">
+<li class="heading">SQL Tutorial</li>
+<li><a href="https://www.tutorialspoint.com/sql/index.htm">SQL - Home</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-overview.htm">SQL - Overview</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-rdbms-concepts.htm">SQL - RDBMS Concepts</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-databases.htm">SQL - Databases</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-syntax.htm">SQL - Syntax</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-data-types.htm">SQL - Data Types</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-operators.htm">SQL - Operators</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-expressions.htm">SQL - Expressions</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-create-database.htm">SQL - Create Database</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-drop-database.htm">SQL - Drop Database</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-select-database.htm">SQL - Select Database</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-create-table.htm">SQL - Create Table</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-drop-table.htm">SQL - Drop Table</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-insert-query.htm">SQL - Insert Query</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-select-query.htm">SQL - Select Query</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-where-clause.htm">SQL - Where Clause</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-and-or-clauses.htm">SQL - AND &amp; OR Clauses</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-update-query.htm">SQL - Update Query</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-delete-query.htm">SQL - Delete Query</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-like-clause.htm">SQL - Like Clause</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-top-clause.htm">SQL - Top Clause</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-order-by.htm">SQL - Order By</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-group-by.htm">SQL - Group By</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-distinct-keyword.htm">SQL - Distinct Keyword</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-sorting-results.htm">SQL - Sorting Results</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">Advanced SQL</li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-constraints.htm">SQL - Constraints</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-using-joins.htm">SQL - Using Joins</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-unions-clause.htm">SQL - Unions Clause</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-null-values.htm">SQL - NULL Values</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-alias-syntax.htm">SQL - Alias Syntax</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-indexes.htm">SQL - Indexes</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-alter-command.htm">SQL - Alter Command</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-truncate-table.htm">SQL - Truncate Table</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-using-views.htm">SQL - Using Views</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-having-clause.htm">SQL - Having Clause</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-transactions.htm">SQL - Transactions</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-wildcards.htm">SQL - Wildcards</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-date-functions.htm">SQL - Date Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-temporary-tables.htm">SQL - Temporary Tables</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-clone-tables.htm">SQL - Clone Tables</a></li>
+<li style="background-color: rgb(214, 214, 214);"><a href="https://www.tutorialspoint.com/sql/sql-sub-queries.htm">SQL - Sub Queries</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-using-sequences.htm">SQL - Using Sequences</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-handling-duplicates.htm">SQL - Handling Duplicates</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-injection.htm">SQL - Injection</a></li>
+</ul>
+<ul class="toc chapters">
+<li class="heading">SQL Useful Resources</li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-database-tuning.htm">SQL - Database Tuning</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql_questions_answers.htm">SQL - Questions and Answers</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-quick-guide.htm">SQL - Quick Guide</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-useful-functions.htm">SQL - Useful Functions</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-useful-resources.htm">SQL - Useful Resources</a></li>
+<li><a href="https://www.tutorialspoint.com/sql/sql-discussion.htm">SQL - Discussion</a></li>
+</ul>
+<ul class="toc reading">
+<li class="sreading">Selected Reading</li>
+<li><a target="_top" href="https://www.tutorialspoint.com/upsc_ias_exams.htm">UPSC IAS Exams Notes</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/developers_best_practices/index.htm">Developer's Best Practices</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/questions_and_answers.htm">Questions and Answers</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/effective_resume_writing.htm">Effective Resume Writing</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/hr_interview_questions/index.htm">HR Interview Questions</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_glossary.htm">Computer Glossary</a></li>
+<li><a target="_top" href="https://www.tutorialspoint.com/computer_whoiswho.htm">Who is Who</a></li>
+</ul>
+<div style="height:250px;">
+<div id="430c9911-782f-495d-88f9-69f58ca8c9a4" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("430c9911-782f-495d-88f9-69f58ca8c9a4");
+});
+</script>
+</div>
+</div>
+</div>
+<!-- Tutorial ToC Ends Here -->
+<!-- Tutorial Content Starts Here -->
+<div class="mui-col-md-6 tutorial-content">
+<h1>SQL - Sub Queries</h1>
+<hr>
+<div class="top-ad-heading">Advertisements</div>
+<div style="text-align:center;" class="google-top-ads">
+<div id="3584b306-b0ce-4f40-8e35-2d32d6c00d35" class="_ap_apex_ad" max-height="150">
+<script>
+    var adpushup = adpushup || {};
+    adpushup.que = adpushup.que || [];
+    adpushup.que.push(function() {
+         adpushup.triggerAd("3584b306-b0ce-4f40-8e35-2d32d6c00d35");
+    });
+</script>
+</div>
+</div>
+<div class="mui-container-fluid button-borders">
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/sql/sql-clone-tables.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/sql/sql-using-sequences.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="clearer"></div>
+<p>A Subquery or Inner query or a Nested query is a query within another SQL query and embedded within the WHERE clause.</p>
+<p>A subquery is used to return data that will be used in the main query as a condition to further restrict the data to be retrieved.</p>
+<p>Subqueries can be used with the SELECT, INSERT, UPDATE, and DELETE statements along with the operators like =, &lt;, &gt;, &gt;=, &lt;=, IN, BETWEEN, etc.</p>
+<p>There are a few rules that subqueries must follow −</p>
+<ul class="list">
+<li><p>Subqueries must be enclosed within parentheses.</p></li>
+<li><p>A subquery can have only one column in the SELECT clause, unless multiple columns are in the main query for the subquery to compare its selected columns.</p></li>
+<li><p>An ORDER BY command cannot be used in a subquery, although the main query can use an ORDER BY. The GROUP BY command can be used to perform the same function as the ORDER BY in a subquery.</p></li>
+<li><p>Subqueries that return more than one row can only be used with multiple value operators such as the IN operator.</p></li>
+<li><p>The SELECT list cannot include any references to values that evaluate to a BLOB, ARRAY, CLOB, or NCLOB.</p></li>
+<li><p>A subquery cannot be immediately enclosed in a set function.</p></li>
+<li><p>The BETWEEN operator cannot be used with a subquery. However, the BETWEEN operator can be used within the subquery.</p></li>
+</ul>
+<h2>Subqueries with the SELECT Statement</h2>
+<p>Subqueries are most frequently used with the SELECT statement. The basic syntax is as follows −</p>
+<pre class="result notranslate">SELECT column_name [, column_name ]
+FROM   table1 [, table2 ]
+WHERE  column_name OPERATOR
+   (SELECT column_name [, column_name ]
+   FROM table1 [, table2 ]
+   [WHERE])
+</pre>
+<h3>Example</h3>
+<p>Consider the CUSTOMERS table having the following records −</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pun">+----+----------+-----+-----------+----------+</span><span class="pln">
+</span><span class="pun">|</span><span class="pln"> ID </span><span class="pun">|</span><span class="pln"> NAME     </span><span class="pun">|</span><span class="pln"> AGE </span><span class="pun">|</span><span class="pln"> ADDRESS   </span><span class="pun">|</span><span class="pln"> SALARY   </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">+----+----------+-----+-----------+----------+</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">1</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Ramesh</span><span class="pln">   </span><span class="pun">|</span><span class="pln">  </span><span class="lit">35</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Ahmedabad</span><span class="pln"> </span><span class="pun">|</span><span class="pln">  </span><span class="lit">2000.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">2</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Khilan</span><span class="pln">   </span><span class="pun">|</span><span class="pln">  </span><span class="lit">25</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Delhi</span><span class="pln">     </span><span class="pun">|</span><span class="pln">  </span><span class="lit">1500.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">3</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> kaushik  </span><span class="pun">|</span><span class="pln">  </span><span class="lit">23</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Kota</span><span class="pln">      </span><span class="pun">|</span><span class="pln">  </span><span class="lit">2000.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">4</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Chaitali</span><span class="pln"> </span><span class="pun">|</span><span class="pln">  </span><span class="lit">25</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Mumbai</span><span class="pln">    </span><span class="pun">|</span><span class="pln">  </span><span class="lit">6500.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">5</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Hardik</span><span class="pln">   </span><span class="pun">|</span><span class="pln">  </span><span class="lit">27</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Bhopal</span><span class="pln">    </span><span class="pun">|</span><span class="pln">  </span><span class="lit">8500.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">6</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Komal</span><span class="pln">    </span><span class="pun">|</span><span class="pln">  </span><span class="lit">22</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> MP        </span><span class="pun">|</span><span class="pln">  </span><span class="lit">4500.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">|</span><span class="pln">  </span><span class="lit">7</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Muffy</span><span class="pln">    </span><span class="pun">|</span><span class="pln">  </span><span class="lit">24</span><span class="pln"> </span><span class="pun">|</span><span class="pln"> </span><span class="typ">Indore</span><span class="pln">    </span><span class="pun">|</span><span class="pln"> </span><span class="lit">10000.00</span><span class="pln"> </span><span class="pun">|</span><span class="pln">
+</span><span class="pun">+----+----------+-----+-----------+----------+</span></pre>
+<p>Now, let us check the following subquery with a SELECT statement.</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">SQL</span><span class="pun">&gt;</span><span class="pln"> SELECT </span><span class="pun">*</span><span class="pln"> 
+   FROM CUSTOMERS 
+   WHERE ID IN </span><span class="pun">(</span><span class="pln">SELECT ID 
+         FROM CUSTOMERS 
+         WHERE SALARY </span><span class="pun">&gt;</span><span class="pln"> </span><span class="lit">4500</span><span class="pun">)</span><span class="pln"> </span><span class="pun">;</span></pre>
+<p>This would produce the following result.</p>
+<pre class="result notranslate">+----+----------+-----+---------+----------+
+| ID | NAME     | AGE | ADDRESS | SALARY   |
++----+----------+-----+---------+----------+
+|  4 | Chaitali |  25 | Mumbai  |  6500.00 |
+|  5 | Hardik   |  27 | Bhopal  |  8500.00 |
+|  7 | Muffy    |  24 | Indore  | 10000.00 |
++----+----------+-----+---------+----------+
+</pre>
+<h2>Subqueries with the INSERT Statement</h2>
+<p>Subqueries also can be used  with INSERT statements. The INSERT statement uses the data returned from the subquery to insert into another table. The selected data in the subquery can be modified with any of the character, date or number functions.</p>
+<p>The basic syntax is as follows.</p>
+<pre class="result notranslate">INSERT INTO table_name [ (column1 [, column2 ]) ]
+   SELECT [ *|column1 [, column2 ]
+   FROM table1 [, table2 ]
+   [ WHERE VALUE OPERATOR ]
+</pre>
+<h3>Example</h3>
+<p>Consider a table CUSTOMERS_BKP with similar structure as CUSTOMERS table. Now to copy the complete CUSTOMERS table into the CUSTOMERS_BKP table, you can use the following syntax.</p>
+<pre class="result notranslate">SQL&gt; INSERT INTO CUSTOMERS_BKP
+   SELECT * FROM CUSTOMERS 
+   WHERE ID IN (SELECT ID 
+   FROM CUSTOMERS) ;
+</pre>
+<h2>Subqueries with the UPDATE Statement</h2>
+<p>The subquery can be used in conjunction with the UPDATE statement. Either single or multiple columns in a table can be updated when using a subquery with the UPDATE statement.</p>
+<p>The basic syntax is as follows.</p>
+<pre class="result notranslate">UPDATE table
+SET column_name = new_value
+[ WHERE OPERATOR [ VALUE ]
+   (SELECT COLUMN_NAME
+   FROM TABLE_NAME)
+   [ WHERE) ]
+</pre>
+<h3>Example</h3>
+<p>Assuming, we have CUSTOMERS_BKP table available which is backup of CUSTOMERS table. The following example updates SALARY by 0.25 times in the CUSTOMERS table for all the customers whose AGE is greater than or equal to 27.</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">SQL</span><span class="pun">&gt;</span><span class="pln"> UPDATE CUSTOMERS
+   SET SALARY </span><span class="pun">=</span><span class="pln"> SALARY </span><span class="pun">*</span><span class="pln"> </span><span class="lit">0.25</span><span class="pln">
+   WHERE AGE IN </span><span class="pun">(</span><span class="pln">SELECT AGE FROM CUSTOMERS_BKP
+      WHERE AGE </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">27</span><span class="pln"> </span><span class="pun">);</span></pre>
+<p>This would impact two rows and finally CUSTOMERS table would have the following records.</p>
+<pre class="result notranslate">+----+----------+-----+-----------+----------+
+| ID | NAME     | AGE | ADDRESS   | SALARY   |
++----+----------+-----+-----------+----------+
+|  1 | Ramesh   |  35 | Ahmedabad |   125.00 |
+|  2 | Khilan   |  25 | Delhi     |  1500.00 |
+|  3 | kaushik  |  23 | Kota      |  2000.00 |
+|  4 | Chaitali |  25 | Mumbai    |  6500.00 |
+|  5 | Hardik   |  27 | Bhopal    |  2125.00 |
+|  6 | Komal    |  22 | MP        |  4500.00 |
+|  7 | Muffy    |  24 | Indore    | 10000.00 |
++----+----------+-----+-----------+----------+
+</pre>
+<h2>Subqueries with the DELETE Statement</h2>
+<p>The subquery can be used in conjunction with the DELETE statement like with any other statements mentioned above.</p>
+<p>The basic syntax is as follows.</p>
+<pre class="result notranslate">DELETE FROM TABLE_NAME
+[ WHERE OPERATOR [ VALUE ]
+   (SELECT COLUMN_NAME
+   FROM TABLE_NAME)
+   [ WHERE) ]
+</pre>
+<h3>Example</h3>
+<p>Assuming, we have a CUSTOMERS_BKP table available which is a backup of the CUSTOMERS table. The following example deletes the records from the CUSTOMERS table for all the customers whose AGE is greater than or equal to 27.</p>
+<pre class="prettyprint notranslate prettyprinted" style=""><span class="pln">SQL</span><span class="pun">&gt;</span><span class="pln"> DELETE FROM CUSTOMERS
+   WHERE AGE IN </span><span class="pun">(</span><span class="pln">SELECT AGE FROM CUSTOMERS_BKP
+      WHERE AGE </span><span class="pun">&gt;=</span><span class="pln"> </span><span class="lit">27</span><span class="pln"> </span><span class="pun">);</span></pre>
+<p>This would impact two rows and finally the CUSTOMERS table would have the following records.</p>
+<pre class="result notranslate">+----+----------+-----+---------+----------+
+| ID | NAME     | AGE | ADDRESS | SALARY   |
++----+----------+-----+---------+----------+
+|  2 | Khilan   |  25 | Delhi   |  1500.00 |
+|  3 | kaushik  |  23 | Kota    |  2000.00 |
+|  4 | Chaitali |  25 | Mumbai  |  6500.00 |
+|  6 | Komal    |  22 | MP      |  4500.00 |
+|  7 | Muffy    |  24 | Indore  | 10000.00 |
++----+----------+-----+---------+----------+
+</pre>
+<div class="mui-container-fluid button-borders show">
+<div class="pre-btn">
+<a href="https://www.tutorialspoint.com/sql/sql-clone-tables.htm"><i class="fal fa-chevron-circle-left"></i> Previous Page</a>
+<a class="hide-on-mobile" href="javascript:printPage();"><i class="fa fa-print"></i> Print Page</a>
+</div>
+<div class="nxt-btn">
+<a href="https://www.tutorialspoint.com/sql/sql-using-sequences.htm">Next Page <i class="fal fa-chevron-circle-right"></i>&nbsp;</a>
+</div>
+</div>
+<div class="google-bottom-ads">
+<div>Advertisements</div>
+<div id="83833f5e-14e4-4e52-a07c-74e19ca35b7e" class="_ap_apex_ad" max-height="400">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("83833f5e-14e4-4e52-a07c-74e19ca35b7e");
+});
+</script>
+</div>
+<div class="space-bottom"></div>
+</div>
+</div>
+<!-- Tutorial Content Ends Here -->
+<!-- Right Column Starts Here -->
+<div class="mui-col-md-2 google-right-ads">
+<div class="space-top"></div>
+<div class="google-right-ad" style="margin: 0px auto !important;margin-top:5px;">
+<div id="f0f6cff6-393d-4170-b63a-d9ff06ca9f25" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("f0f6cff6-393d-4170-b63a-d9ff06ca9f25");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:5px;">
+<div id="5c0affd5-724a-475c-bfcd-cecbc7660c36" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("5c0affd5-724a-475c-bfcd-cecbc7660c36");
+});
+</script>
+</div>
+</div>
+<div class="google-right-ad" style="margin-top:5px;">
+<div id="8f8814c2-d64c-4d26-9cb9-543653c0b48f" class="_ap_apex_ad">
+<script>
+var adpushup = adpushup || {};
+adpushup.que = adpushup.que || [];
+adpushup.que.push(function() {
+adpushup.triggerAd("8f8814c2-d64c-4d26-9cb9-543653c0b48f");
+});
+</script>
+</div>
+</div>
+<div class="space-bottom" style="margin-bottom:15px;"></div>
+</div>
+<!-- Right Column Ends Here -->
+</div>
+</div>
+<div class="clear"></div>
+<footer id="footer">
+<div class="mui--text-center">
+<div class="mui--text-caption mui--text-light">
+<a href="https://www.tutorialspoint.com/index.htm" class="logo"><img class="img-responsive" src="./SQL - Sub Queries - Tutorialspoint_files/logo-black.png" alt="Tutorials Point" title="Tutorials Point"></a>
+</div>
+<ul class="mui-list--inline mui--text-body2 mui--text-light">
+<li><a href="https://www.tutorialspoint.com/about/index.htm"><i class="fal fa-globe"></i> About us</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_terms_of_use.htm"><i class="fal fa-asterisk"></i> Terms of use</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_privacy.htm"> <i class="fal fa-shield-check"></i> Privacy Policy</a></li>
+<li><a href="https://www.tutorialspoint.com/about/faq.htm"><i class="fal fa-question-circle"></i> FAQ's</a></li>
+<li><a href="https://www.tutorialspoint.com/about/about_helping.htm"><i class="fal fa-hands-helping"></i> Helping</a></li>
+<li><a href="https://www.tutorialspoint.com/about/contact_us.htm"><i class="fal fa-map-marker-alt"></i> Contact</a></li>
+</ul>
+<div class="mui--text-caption mui--text-light bottom-copyright-text">© Copyright 2019. All Rights Reserved.</div>
+</div>
+<script async="" src="./SQL - Sub Queries - Tutorialspoint_files/js"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-232293-6');
+</script>
+</footer>
+
+
+</body></html>
