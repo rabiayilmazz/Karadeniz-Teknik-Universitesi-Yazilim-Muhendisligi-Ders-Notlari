@@ -137,3 +137,8 @@ sezgisel yöntem ve kuralların, basitleştirmelerin kullanımı
   * Yarı danışmanlı - Takviyeli
     * Akıllı süpürge buna örnektir. Bıraktığımız odanın haritasını çıkarması.
     *
+
+*  Problem türlerine göre sınfılandırma
+  * Tahmin (kestirim-optimizasyon)
+  * Sınıflandırma
+  * Kümeleme
