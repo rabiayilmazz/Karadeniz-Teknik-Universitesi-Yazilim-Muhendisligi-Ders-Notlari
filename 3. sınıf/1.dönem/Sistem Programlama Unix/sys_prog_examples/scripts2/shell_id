@@ -1,3 +1,0 @@
-id=$$
-echo $id
-echo $*

@@ -1,8 +1,0 @@
-while : 
-do 
-    read CMD 
-    case $CMD in 
-        [qQ]|[qQ][uU][iI][tT]) break ;; 
-        *) eval $CMD ;; 
-     esac 
-done

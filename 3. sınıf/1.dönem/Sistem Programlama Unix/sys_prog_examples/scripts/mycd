@@ -1,1 +1,0 @@
-cd() { chdir ${1:-$HOME} ; PS1="`pwd`$ " ; export PS1 ; }

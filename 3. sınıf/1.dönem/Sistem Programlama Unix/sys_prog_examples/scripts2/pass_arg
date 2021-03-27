@@ -1,6 +1,0 @@
-#Script to accept 5 numbers and display their sum.
-	echo the parameters passed are : $1, $2, $3, $4, $5
-	echo the name of the script is : $0
-	echo the number of parameters passed are : $#
-	sum=`expr $1 + $2 + $3 + $4 + $5`
-	echo The sum is : $sum

@@ -1,6 +1,0 @@
-x=0 
-while [ $x -lt 10 ] 
-do 
-    echo $x 
-     x=`echo "$x + 1" | bc`
-done
