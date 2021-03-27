@@ -2,6 +2,7 @@
 KTÜ Yazılım Mühendisliği ders notlarını içerir
 
 ## 1. Sınıf
+### [1. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1Lhwr27jCRdOmonKVm2oBVRSof7MuwW9g?usp=sharing)
 
 ### 1. Dönem dersleri 
 * Atatürk İlkeleri ve İnkılap Tarihi - I	2	
@@ -24,6 +25,7 @@ KTÜ Yazılım Mühendisliği ders notlarını içerir
 * Yazılım Gereksinimi Mühendisliği	2
   
 ## 2. Sınıf
+### [2. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1yx-dSXJR6-cxHJpYkMN7x0tphMJjXXDV?usp=sharing)
 
 ### 1. Dönem dersleri 
 * Mühendislik ve Bilişim Etiği	2	
@@ -44,6 +46,7 @@ KTÜ Yazılım Mühendisliği ders notlarını içerir
 * Olasılık ve İstatistik	3,50
   
 ## 3. Sınıf
+### [3. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1ulGFiAq1KWu2x7RERYH0l9007GRTGZUR?usp=sharing)
 
 ### 1. Dönem dersleri 
 * Biçimsel Diller ve Otomata	3	
@@ -65,5 +68,7 @@ KTÜ Yazılım Mühendisliği ders notlarını içerir
 * Ayrık Matematik	2,50
   
 ## 4. Sınıf
+### [4. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1HdKvowfARe4kAzH2nu_WsV7Pxc5oiOZ3?usp=sharing)
+
 ### 1. Dönem dersleri 
 ### 2. Dönem dersleri
