@@ -142,3 +142,33 @@ sezgisel yöntem ve kuralların, basitleştirmelerin kullanımı
   * Tahmin (kestirim-optimizasyon)
   * Sınıflandırma
   * Kümeleme
+
+# 8 mart 2021
+* Makine öğrenmesi terimleri
+  * ***Tahmin:***  Veriden öğrenen modellerde sistem çıkışının
+nicel olması durumunda kullanılan yöntemlerin ürettiği
+değerlerdir
+  * ***Sınıflandırma:*** Giriş verisine ait çıkışların nitel
+olduğu durumlarda kullanılan yöntemlerin her veri örneğinin
+hangi sınıfa ait olduğunu belirlemesidir
+  * ***Tahmin ve kestirim:*** İstatistikte rasgele bir değişkenin bilinmeyen
+bir değerinin belirlenmesi için tahmin (prediction), bilinmeyen
+bir sabitin belirlenmesi içinse kestirim (estimation) kavramından
+bahsedilir. Çok yakın anlamları dolayısıyla bu iki terim literatürde
+çoğunlukla karıştırılarak aynı şeyi ifade etmede kullanılır.
+
+## bağımlı bağımsız değişkenler
+* y=f(x)=x1^2+x2^3+10 deki
+  * x1 ve x2 problemin bağımsız değişkenin
+  * y problemin bağımlı değişkenidir.
+  * f(x) ise bağımlı ve bağımsız değişkanler arasındaki ilişkidir.
+  * deterministik değişkenler: aynı değişmeyen değerler(rand gibi değişmeyen)
+  * fonksiyon kesin bir kurala dayandırılamıyorsa bu durum yapay zeka yöntemlerine başvurulur.
+  * ***veri türleri:*** bağımlı değişken veri türü problemin tipini işaret eder. y=? sayısal türde veri alıyordur. Sayısal değerler tahmin edilir. sınıflandırılmaz.
+
+
+# 11 mart 2021
+# 15 mart 2021
+# 18 mart 2021
+# 22 mart 2021
+# 25 mart 2021
