@@ -1,5 +1,5 @@
 # Karadeniz Teknik Universitesi Yazilim Muhendisligi Ders Notlari
-KTÜ Yazılım Mühendisliği ders notlarını içerir. İlgili sınfın ders notları drive da dosyalanmıştır. İndirme işleminizi kolaylaştırmak için. Erişimi talebiniz üzerine gün içinde onay alacaksınız. Bu şekilde ders notlarına erişebilirsiniz. Hocaların paylaştığı dokümanlar ve çalıştığım dokümanlardan oluşan bir depodur. 
+***KTÜ Yazılım Mühendisliği ders notlarını içerir. İlgili sınfın ders notları drive da dosyalanmıştır. İndirme işleminizi kolaylaştırmak için. Erişimi talebiniz üzerine gün içinde onay alacaksınız. Bu şekilde ders notlarına erişebilirsiniz. Hocaların paylaştığı dokümanlar ve çalıştığım dokümanlardan oluşan bir depodur.*** 
 
 ## 1. Sınıf
 ### [1. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1Lhwr27jCRdOmonKVm2oBVRSof7MuwW9g?usp=sharing)
