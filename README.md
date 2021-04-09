@@ -1,6 +1,8 @@
 # Karadeniz Teknik Universitesi Yazilim Muhendisligi Ders Notlari
 ***KTÜ Yazılım Mühendisliği ders notlarını içerir. İlgili sınfın ders notları drive da dosyalanmıştır. İndirme işleminizi kolaylaştırmak için. Erişimi talebiniz üzerine gün içinde onay alacaksınız. Bu şekilde ders notlarına erişebilirsiniz. Hocaların paylaştığı dokümanlar ve çalıştığım dokümanlardan oluşan bir depodur.*** 
 
+***Not: Her dersin yanında yazan sayılar dersin kredisini ifade eder. Dersler benim aldığım seçmeli derslere göre şekillenmektedir. Erişim sağlayabildiğimde diğer seçmeli derlerin de kaynaklarını ekleyeceğim***
+
 ## 1. Sınıf
 ### [1. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1Lhwr27jCRdOmonKVm2oBVRSof7MuwW9g?usp=sharing)
 
@@ -65,7 +67,6 @@
 * Bilgisayar Ağları	2,50	
 * Yazılım Sınama ve Doğrulama	2,50	
 * Yapay Zekâ	3,50
-* Ayrık Matematik	2,50
   
 ## 4. Sınıf
 ### [4. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1HdKvowfARe4kAzH2nu_WsV7Pxc5oiOZ3?usp=sharing)
