@@ -32,9 +32,9 @@
 ### 1. Dönem dersleri 
 * Mühendislik ve Bilişim Etiği	2	
 * Bilimsel Proje Hazırlama	2	
-* Veri Tabanı ve Yönetimi	3	
+* Veri Tabanı ve Yönetimi	3	[--> Tıklayınız](https://drive.google.com/drive/folders/1JC-OWSqSDwuvZzpxfPnapDrTQ8XfDIbN?usp=sharing)
 * İşletim Sistemleri	3	
-* Nesne Yönelimli Programlama	3
+* Nesne Yönelimli Programlama	3 [-->](https://drive.google.com/drive/folders/1C2K86bh_I3hd3g6Uu71IXNUE58UkiGbo?usp=sharing)
 * Diferansiyel Denklemler	4	
 * İngilizce Okuma ve Yazma	2
 
