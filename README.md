@@ -4,6 +4,8 @@
 ***Not: Her dersin yanında yazan sayılar dersin kredisini ifade eder. Dersler benim aldığım seçmeli derslere göre şekillenmektedir. Erişim sağlayabildiğimde diğer seçmeli derlerin de kaynaklarını ekleyeceğim***
 
 ***Kaynağı verimli bulduysanız yıldızlamayı, daha çok arkadaşımıza erişim sağlayabilmemiz için de köprü oluşturmayı unutmayınız.***
+* Üstteki dosyalar şu an boştur. dosyaların içinde olması gereken tüm dosyalar, belgeler drive da ilgili klasörün altında depolanmıştır.
+* Çıkmış sorular için birebir iletişime geçmeniz gerekiyor. Mail: yyilmazrabiaa@gmail.com
 
 ## 1. Sınıf
 ### [1. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1Lhwr27jCRdOmonKVm2oBVRSof7MuwW9g?usp=sharing)
