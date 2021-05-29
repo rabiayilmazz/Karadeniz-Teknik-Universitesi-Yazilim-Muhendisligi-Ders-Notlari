@@ -1,4 +1,4 @@
-# Karadeniz Teknik Universitesi Yazilim Mühendisliği Ders NotlarI
+# Karadeniz Teknik Üniversitesi Yazılım Mühendisliği Ders NotlarI
 ***KTÜ Yazılım Mühendisliği ders notlarını içerir. İlgili sınfın ders notları drive da dosyalanmıştır (İndirme işleminizi kolaylaştırmak için.) Erişim talebiniz üzerine gün içinde onay alacaksınız. Bu şekilde ders notlarına erişebilirsiniz. Hocaların paylaştığı dokümanlar ve çalıştığım dokümanlardan oluşan bir depodur.*** 
 
 ***Not: Her dersin yanında yazan sayılar dersin kredisini ifade eder. Dersler benim aldığım seçmeli derslere göre şekillenmektedir. Erişim sağlayabildiğimde diğer seçmeli derlerin de kaynaklarını ekleyeceğim***
