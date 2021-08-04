@@ -1,0 +1,1 @@
+# KTÜ Yazılım mühendisliği tercih edecek arkadaşlarımızın sorudğu sorular ve cevaplarını burada cevaplayacağım. Gel olarak sorular aynı olduğu için bütün arkadaşlara ayrı ayrı açıklama yapmam gerekiyor.
