@@ -5,7 +5,7 @@
 ## Yurt okula yakın mı? Yurt çıkmazsa özel yurt var mı?
 ## Dersler zor mu?
 ## Hocalar nasıl? Takıntılı hoca var mı?
-## 
+## Önerdiğin bilgisayar var mı?
 ##
 ##
 ##
