@@ -6,7 +6,7 @@
 ## Dersler zor mu?
 ## Hocalar nasıl? Takıntılı hoca var mı?
 ## Önerdiğin bilgisayar var mı?
-##
+## Ulaşım kolay mı?
 ##
 ##
 ##
