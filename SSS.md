@@ -1,4 +1,4 @@
-# KTÜ Yazılım mühendisliği tercih edecek arkadaşlarımızın soruduğu sorular ve cevaplarını burada cevaplayacağım. Genel olarak sorular aynı olduğu için bütün arkadaşlara ayrı ayrı açıklama yapmam gerekiyor. Bu şekilde toplu bir çözüm üretmem gerekti.
+# KTÜ Yazılım mühendisliği tercih edecek arkadaşlarımızın soruduğu sorular ve cevaplarını burada cevaplayacağım. Genel olarak sorular aynı olduğu için bütün arkadaşlara ayrı ayrı açıklama yapmam gerekiyor. Bu şekilde toplu bir çözüm üretmem gerekti .
 
 ## Fakültenin ilçede olması ne kadar etkiliyor?
 ## Sosyal olanaklar nasıl?
