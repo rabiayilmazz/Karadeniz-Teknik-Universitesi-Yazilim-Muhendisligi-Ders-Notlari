@@ -77,4 +77,8 @@
 ### [4. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1HdKvowfARe4kAzH2nu_WsV7Pxc5oiOZ3?usp=sharing)
 
 ### 1. Dönem dersleri 
+* İşyeri Eğitimi
+* Mesleki Deneyim 1
+* Mesleki Deneyim 2
+* Bitirme Projesi
 ### 2. Dönem dersleri
