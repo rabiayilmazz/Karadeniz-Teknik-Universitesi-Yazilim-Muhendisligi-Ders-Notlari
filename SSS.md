@@ -7,7 +7,7 @@
 ## Yurt okula yakın mı? Yurt çıkmazsa özel yurt var mı?
 * KYK ile okul arası 5dk yürüme mesafesi var. Yurt çıkmayan arkadaşlar çarşı tarafında konaklayacak apatlar ya da evler bulabilirler. Bu durumda da fakülteye olan mesafe 30dk lık yürüme mesafesine ulaşıyor. 
 ## Dersler zor mu?
-* Derler zor. Çok klişe gelebilir ama çalışana kolay. 
+* Dersler zor. Çok klişe gelebilir ama çalışana kolay. 
 ## Hocalar nasıl? Takıntılı hoca var mı?
 * Hocalarımız iyi. Takıntılı bir hocaya denk gelmedim. 
 ## Önerdiğin bilgisayar var mı?
