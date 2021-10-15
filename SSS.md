@@ -12,7 +12,7 @@
 * Hocalarımız iyi. Takıntılı bir hocaya denk gelmedim. 
 ## Önerdiğin bilgisayar var mı?
 ## Ulaşım kolay mı?
-* Bazen yürümeniz gerekecek bunun dışında rahat, trafik yok denecek kadar az.
+* Bazen yürümeniz gerekecek bunun dışında rahat, trafik yok ama çok fazla araba var.
 ## Başka sorular da eklenecek, sizin de sorularınız var sa eklemem için bana mail atabilirsiniz.
 ##
 ##
