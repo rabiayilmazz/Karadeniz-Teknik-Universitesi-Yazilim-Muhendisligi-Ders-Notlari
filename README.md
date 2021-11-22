@@ -5,7 +5,7 @@
 
 ***Kaynağı verimli bulduysanız yıldızlamayı, daha çok arkadaşımıza erişim sağlayabilmemiz için de köprü oluşturmayı unutmayınız.***
 * Üstteki dosyalar şu an boştur. dosyaların içinde olması gereken tüm dosyalar, belgeler drive da ilgili klasörün altında depolanmıştır.
-<--? * Çıkmış sorular için birebir iletişime geçmeniz gerekiyor. 
+<!-- * Çıkmış sorular için birebir iletişime geçmeniz gerekiyor. 
 * Mail: yyilmazrabiaa@gmail.com -->
 
 ## 1. Sınıf
