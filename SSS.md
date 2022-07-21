@@ -20,7 +20,7 @@
 * trabzon merkez 45-50 dk oflularile gidecekseniz. 
 * belediye otobüsü var her saatte kalkıyor ücretler,daha makül süresi uzun. (1.5 saat oluyor. 2 saati bulduğu oluyor)
 ## Nereden başlamalıyım?
-* Algoritma  öğrenerek,
+* Algoritma  öğrenerek, buraya bir makale bırakıyorum [tıklayabilirsiniz](https://teknotower.com/algoritma-nedir-algoritma-ornekleri-teknotower/)
 * Yalancı kod yazarak,
 * akış diyagramı çizerek,
 * C dili ile basit algoritma örnekleri yazmaya çalışarak başlayabilirsiniz. 
