@@ -1,13 +1,16 @@
 # Karadeniz Teknik Üniversitesi Yazılım Mühendisliği Ders Notları 2018-2022
-***KTÜ Yazılım Mühendisliği ders notlarını içerir. İlgili sınfın ders notları drive da dosyalanmıştır (İndirme işleminizi kolaylaştırmak için.) Erişim talebiniz üzerine gün içinde onay alacaksınız. Bu şekilde ders notlarına erişebilirsiniz. Hocaların paylaştığı dokümanlar ve çalıştığım dokümanlardan oluşan bir depodur.*** 
+***KTÜ Yazılım Mühendisliği ders notlarını içerir. İlgili sınfın ders notları drive da dosyalanmıştır (İndirme işleminizi kolaylaştırmak için.) Erişim talebiniz üzerine gün içinde onay alacaksınız ***LİNKLERE BİR DEFA TIKLAYIN ÜST ÜSTE ERİŞİM İSTEYENLERİN İSTEKLERİ KABUL EDİLMİYOR***. Bu şekilde ders notlarına erişebilirsiniz. Hocaların paylaştığı dokümanlar ve çalıştığım dokümanlardan oluşan bir depodur.*** 
 
 ***Not: Her dersin yanında yazan sayılar dersin kredisini ifade eder. Dersler benim aldığım seçmeli derslere göre şekillenmektedir. Erişim sağlayabildiğimde diğer seçmeli derlerin de kaynaklarını ekleyeceğim***
 
 ***Kaynağı verimli bulduysanız yıldızlamayı, daha çok arkadaşımıza erişim sağlayabilmemiz için de köprü oluşturmayı unutmayınız.***
 * Üstteki dosyalar şu an boştur. dosyaların içinde olması gereken tüm dosyalar, belgeler drive da ilgili klasörün altında depolanmıştır.
-<!-- 
+
 * Çıkmış sorular için birebir iletişime geçmeniz gerekiyor. 
+* ***Yeni eklenmiştir*** Mezun olarak danışmanlık veriyorum. Bunun için de mailden iletişime geçebilirsiniz. (Ücretlidir.)
 * Mail: yyilmazrabiaa@gmail.com 
+
+
 -->
 
 ## 1. Sınıf
@@ -37,13 +40,13 @@
 ### [2. sınıf ders notları için tıklayın](https://drive.google.com/drive/folders/1yx-dSXJR6-cxHJpYkMN7x0tphMJjXXDV?usp=sharing)
 
 ### 1. Dönem dersleri 
-* Mühendislik ve Bilişim Etiği	2	[--> Tıklayınız](https://drive.google.com/drive/folders/16cYa0moZS3P4CAk9W5pkrzX1PxFi5ISi?usp=sharing)
-* Bilimsel Proje Hazırlama	2	[--> Tıklayınız](https://drive.google.com/drive/folders/1JC-OWSqSDwuvZzpxfPnapDrTQ8XfDIbN?usp=sharing)
-* Veri Tabanı ve Yönetimi	3	[--> Tıklayınız](https://drive.google.com/drive/folders/1JC-OWSqSDwuvZzpxfPnapDrTQ8XfDIbN?usp=sharing)
-* İşletim Sistemleri	3	[--> Tıklayınız](https://drive.google.com/drive/folders/1qJa3eZ_NUEMfLkqb4SwN17KHfOJ_7WDP?usp=sharing)
-* Nesne Yönelimli Programlama	3 [--> Tıklayınız](https://drive.google.com/drive/folders/1qJa3eZ_NUEMfLkqb4SwN17KHfOJ_7WDP?usp=sharing)
+* Mühendislik ve Bilişim Etiği	2	
+* Bilimsel Proje Hazırlama	2	
+* Veri Tabanı ve Yönetimi	3
+* İşletim Sistemleri	3
+* Nesne Yönelimli Programlama	3
 * Diferansiyel Denklemler	4	
-* İngilizce Okuma ve Yazma	2[--> Tıklayınız](https://drive.google.com/drive/folders/1_nugjS-PKakqnv8dM96G7dnyZWQU7pOp?usp=sharing)
+* İngilizce Okuma ve Yazma	2
 
 ### 2. Dönem dersleri
 * Bilim Tarihi	2	
@@ -84,3 +87,10 @@
 * Mesleki Deneyim 2
 * Bitirme Projesi
 ### 2. Dönem dersleri
+* Yazılım Kalite Güvencesi 3
+* Yazılım Geliştirme Standartları ve Proje Yönetimi 3
+* Meta - Sezgisel Optimizasyon 2
+* Paralel Hesaplama 2
+* Bitirme Çalışması 1
+* Veri Madenciliği 2
+* Siber Güvenlik ve Uygulamaları 2
